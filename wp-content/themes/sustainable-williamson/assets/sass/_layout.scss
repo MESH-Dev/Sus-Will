@@ -1,0 +1,285 @@
+
+/* Table of Content
+================================================== */
+
+
+
+/* Header Styles
+================================================== */
+
+header { background-position: top center; width: 100%; height: 700px; position: absolute; overflow: hidden; text-align: center; color: #fff;
+	.nav-bar { margin-top: -35px; position: relative; transition: 0.2s all; -webkit-transition: 0.2s all; -moz-transition: 0.2s all; -ms-transition: 0.2s all; -o-transition: 0.2s all;
+		@include breakpoint(landscape) { margin-top: -15px; }
+		@include breakpoint(portrait) { margin-top: 0px; }
+	}
+
+	.top-third { width: $one_third; float: left; min-height: 75px;
+		.top-third-text { margin-top: 10px; margin-bottom: 5px; position: relative;
+			.main-text { font-family: $gothic; text-transform: uppercase; color: white; font-size: 26px; margin-bottom: 10px; line-height: 26px; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto;
+				@include breakpoint(smallscreen) { display: none; }
+				@include breakpoint(landscape) { display: none; }
+				@include breakpoint(portrait) { display: none; }
+			}
+			.sub-text { color: white; text-transform: uppercase; font-family: $nexa-bold; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; bottom: -55px;
+				@include breakpoint(smallscreen) { font-size: 13px; }
+				@include breakpoint(landscape) { font-size: 13px; }
+				@include breakpoint(portrait) { font-size: 13px; }
+			}
+		}
+	}
+
+	.show { margin-top: 0px; }
+
+	.container { position: relative; height: 100%;}
+
+	// first row
+	#logo { float: right; overflow: visible; position: relative; margin-top: 20px;
+		@include breakpoint(smallscreen) { float: left; }
+		@include breakpoint(landscape) { float: left; }
+		@include breakpoint(portrait) { float: left; }
+		img { max-width: none;
+			@include breakpoint(smallscreen) { width: 215px; margin-top: 20px; }
+			@include breakpoint(landscape) { width: 215px; margin-top: 20px; }
+			@include breakpoint(portrait) { width: 215px; margin-top: 20px; }
+		}
+	}
+
+	#menu { display: none; float: right; color: $yellow; margin-top: 40px; cursor: pointer;
+		@include breakpoint(landscape) { display: inline-block; }
+		@include breakpoint(portrait) { display: inline-block; }
+	}
+
+	#mainNav { float: right; margin: 40px 0px;
+		ul { list-style: none; margin-left: none; float: right;
+			li { text-transform: uppercase; display: inline; padding: 0px 10px;
+				a { color: $yellow; font-family: $gothic; font-size: 24px; text-decoration: none;
+					@include breakpoint(smallscreen) { font-size: 18px; }
+				}
+				a:hover { opacity: 0.8; }
+			}
+			li:last-child { padding-right: 0px; }
+			li:first-child { padding-left: 0px; }
+		}
+		@include breakpoint(landscape) { display: none; }
+		@include breakpoint(portrait) { display: none; }
+	}
+
+	#responsiveNav { display: none; float: left; background: $light-green; padding: 10px; position: absolute; top: 195px; z-index: 999; right: 0px;
+		ul { list-style: none; margin-left: 0px;
+			li { text-transform: uppercase; padding: 5px 10px; text-align: left;
+				a { color: $yellow; font-family: $gothic; font-size: 26px; text-decoration: none; }
+				a:hover { opacity: 0.8; }
+			}
+		}
+	}
+
+	.white-ribbon { width: 100%; }
+
+	// second row
+	.angle-left { float: left; color: black; font-size: 25px; cursor: pointer; transition: 0.2s all; -webkit-transition: 0.2s all; -moz-transition: 0.2s all; -ms-transition: 0.2s all; -o-transition: 0.2s all; margin-left: 15px;
+		@include breakpoint(smallscreen) { display: none; }
+		@include breakpoint(landscape) { display: none; }
+		@include breakpoint(portrait) { display: none; }
+	}
+	.upside-down { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+
+	.content-right { float: right; padding-top: 5px; margin-right: 15px;
+		span { color: #555555; font-family: $nexa-bold; font-size: 14px; margin-right: 80px; }
+		img { position: absolute; top: -8px; right: 15px; }
+	}
+
+	// third row
+
+}
+
+.home-callout { z-index: 999; text-align: center;
+	@include breakpoint(smallscreen) { margin-top: 245px; }
+	@include breakpoint(landscape) { margin-top: 245px; }
+	@include breakpoint(portrait) { margin-top: 265px; }
+	span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 75px; border-bottom: 5px solid white;
+		@include breakpoint(smallscreen) { font-size: 60px; }
+		@include breakpoint(landscape) { font-size: 32px; }
+		@include breakpoint(portrait) { font-size: 23px; }
+	}
+}
+.home-callout:after { content: url(assets/img/circle_and_line.png); position: relative; display: block; margin-top: 13px; z-index: 999; text-align: center;
+	@include breakpoint(landscape) { margin-top: 5px; }
+	@include breakpoint(portrait) { margin-top: 5px; }
+}
+
+/* Navigation Styles
+================================================== */
+
+/* Staff Styles
+================================================== */
+
+.specialty { margin-bottom: 5px !important; }
+
+.staff { margin-left: 0 !important; margin-bottom: 50px; }
+.staff-member { margin-bottom: 20px;
+	.picture { width: 100px; height: 100px; border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px; margin: 10px auto; }
+	.name { font-family: $gothic; text-transform: uppercase; font-size: 26px; margin-right: 5px; }
+	.title { font-family: $gothic; text-transform: uppercase; color: $blue; }
+	.question { font-family: $gothic; text-transform: uppercase; font-size: 18px; margin-right: 5px; }
+	.answer { font-family: $nexa-light; font-size: 16px; }
+	.description {}
+}
+
+/* Responsive Menu
+================================================== */
+
+
+/* Sidebar
+================================================== */
+
+.sidebar { float: right !important; margin-bottom: 20px;
+	.textarea { margin: 0px auto 30px;
+		.textarea-headline { font-family: $gothic; text-transform: uppercase; color: black; font-size: 22px; margin-bottom: 10px; }
+		.textarea-body {  font-family: $nexa-light; color: black; }
+	}
+
+	.callout { margin: 0px 0px 30px; font-family: $nexa-light; font-size: 34px; line-height: 39px; color: black; }
+
+	blockquote { margin: 10px 0px 30px; }
+}
+
+/* Homepage Styles
+================================================== */
+
+.wrapper { top: 425px; position: absolute; width: 100%;
+	@include breakpoint(smallscreen) { top: 180px; }
+	@include breakpoint(landscape) { top: 180px; }
+	@include breakpoint(portrait) { top: 160px; }
+}
+
+#slogan { position: relative; top: 80px; }
+
+#content { background: $yellow;
+	.content-callout { text-align: center; padding: 60px 16%;
+		span { font-family: $nexa-light; font-size: 22px; line-height: 35px; }
+	}
+	.content-holder { height: 90px; }
+}
+
+#overview {
+	.overview-callout { border: 2px solid black; padding: 35px; text-align: center; height: 170px; margin: 50px 0px; color: black;
+
+		@include breakpoint(smallscreen) { margin: 20px 0px; }
+		@include breakpoint(landscape) { margin: 20px 0px; }
+		@include breakpoint(portrait) { margin: 20px 0px; }
+
+		.overview-callout-headline { font-family: $gothic; text-transform: uppercase; font-size: 22px; margin-bottom: 10px; }
+		.overview-callout-body { font-family: $nexa-light; }
+	}
+	.overview-callout:hover { background: black; color: white; }
+}
+
+#contact { background: white;
+	.contact-callout { text-align: center; padding: 50px 10% 10px;
+		p { font-family: $nexa-light; font-size: 22px; line-height: 35px; }
+	}
+}
+
+#testimonial { background: $yellow;
+	.testimonial-callout { text-align: center; padding: 50px 10%;
+		span { font-family: $gothic; text-transform: uppercase; font-size: 22px; }
+	}
+}
+
+#image {
+	.image-holder { height: 180px; }
+}
+
+.header-image {
+	height: 600px;
+	position: absolute;
+	z-index: -10;
+	top: 60px;
+	width: 100%;
+}
+
+/* PAGE Styles
+================================================== */
+
+#page-content { padding-top: 30px;
+	.page-content-block { margin-left: 0px; }
+}
+
+/* Contact Styles
+================================================== */
+
+#wpgmza_map {
+	margin-bottom: 30px;
+}
+
+/* FOOTER Styles
+================================================== */
+
+footer { background: black; width: 100%;
+	.footer-content { padding: 30px 0px;
+		.footer-logo { margin-bottom: 10px; }
+		.footer-contact {
+			p { font-family: $nexa-light; color: white; line-height: 1.5em; }
+		}
+		.footer-headline { border-bottom: 3px solid white; padding-bottom: 10px; margin-bottom: 10px;
+			span { font-family: $gothic; text-transform: uppercase; color: white; font-size: 22px; }
+		}
+		.footer-body {  padding-bottom: 5px;
+			p { margin-bottom: 10px;
+				a { font-family: $gothic; text-transform: uppercase; color: white; font-size: 22px; text-decoration: none; }
+			}
+		}
+	}
+}
+
+
+/* #Button Styles
+================================================== */
+
+/*
+
+<a href="">
+	<div class="btn">
+		<div class="btn-headline">
+			<span>Headline goes here</span>
+		</div>
+		<div class="btn-body">
+			<span>The body and anything you want to say goes here</span>
+		</div>
+	</div>
+</a>
+
+*/
+
+.btn-home { margin-bottom: 50px !important; }
+
+.btn {  padding: 1% 10%; display: block; border: 2px solid black; color: black; text-align: center; margin-bottom: 8px;
+	.btn-headline { font-family: $gothic; text-transform: uppercase; font-size: 20px; line-height: 30px; }
+	.btn-body { font-family: $nexa-light; }
+}
+.btn:hover { background-color: black; color: white; }
+
+/* #Blog Styles
+================================================== */
+
+
+
+/* #Media Queries
+================================================== */
+
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
