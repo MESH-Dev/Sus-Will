@@ -3,7 +3,6 @@
 ================================================== */
 
 
-
 /* Header Styles
 ================================================== */
 
@@ -96,10 +95,10 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	@include breakpoint(smallscreen) { margin-top: 245px; }
 	@include breakpoint(landscape) { margin-top: 245px; }
 	@include breakpoint(portrait) { margin-top: 265px; }
-	span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 75px; border-bottom: 5px solid white;
-		@include breakpoint(smallscreen) { font-size: 60px; }
-		@include breakpoint(landscape) { font-size: 32px; }
-		@include breakpoint(portrait) { font-size: 23px; }
+	span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 70px; border-bottom: 5px solid white;
+		@include breakpoint(smallscreen) { font-size: 57px; }
+		@include breakpoint(landscape) { font-size: 30px; }
+		@include breakpoint(portrait) { font-size: 21px; }
 	}
 }
 .home-callout:after { content: url(assets/img/circle_and_line.png); position: relative; display: block; margin-top: 13px; z-index: 999; text-align: center;
@@ -155,7 +154,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 #slogan { position: relative; top: 80px; }
 
 #content { background: $yellow;
-	.content-callout { text-align: center; padding: 60px 16%;
+	.content-callout { text-align: center; padding: 80px 16% 40px;
 		span { font-family: $nexa-light; font-size: 22px; line-height: 35px; }
 	}
 	.content-holder { height: 90px; }
@@ -168,7 +167,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		@include breakpoint(landscape) { margin: 20px 0px; }
 		@include breakpoint(portrait) { margin: 20px 0px; }
 
-		.overview-callout-headline { font-family: $gothic; text-transform: uppercase; font-size: 22px; margin-bottom: 10px; }
+		.overview-callout-headline { font-family: $gothic; text-transform: uppercase; font-size: 22px; margin-bottom: 10px; line-height: 22px; }
 		.overview-callout-body { font-family: $nexa-light; }
 	}
 	.overview-callout:hover { background: black; color: white; }

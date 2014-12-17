@@ -18,13 +18,15 @@
     // check if the repeater field has rows of data
     if( have_rows('textboxes') ):
 
+      $i = 0;
+
      	// loop through the rows of data
         while ( have_rows('textboxes') ) : the_row();
 
             // display a sub field value
             ?>
 
-            <div class="four columns">
+            <div class="four columns <?php if ($i == 0) { echo 'offset-by-two'; } ?>">
               <a href="<?php the_sub_field('textbox_link'); ?>">
                 <div class="overview-callout">
                   <div class="overview-callout-headline">
@@ -38,6 +40,8 @@
             </div>
 
             <?php
+
+            $i = $i + 1;
 
         endwhile;
 
