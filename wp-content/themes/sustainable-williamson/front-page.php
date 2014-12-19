@@ -91,11 +91,19 @@
 
 <section id="video" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   <div class="container">
-    <div class="video-callout">
-      <iframe width="770" height="463" src="//www.youtube.com/embed/HwZ_MNT6C1k" frameborder="0" allowfullscreen></iframe>
+    <div class="video-container">
+      <a href="#" data-featherlight="#sw-vid">
+        <div class="video-callout" style="background: url(<?php echo get_template_directory_uri() ?>/assets/img/sw_vid.jpg) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
+          <span><img src="<?php echo get_template_directory_uri() ?>/assets/img/play-btn-lrg.png" /></span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
+
+<div class="lightbox" id="sw-vid">
+  <iframe width="770" height="463" src="//www.youtube.com/embed/HwZ_MNT6C1k" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <section id="testimonial">
   <div class="container">
@@ -136,7 +144,7 @@
             <span><?php the_sub_field('video_title'); ?><br/><br/><img src="<?php echo get_template_directory_uri() ?>/assets/img/play-btn-sml.png" /></span>
           </div>
         </a>
-        <div id="<?php echo $t; ?>" class="lightbox"> Input the video here </div>
+        <div id="<?php echo $t; ?>" class="lightbox"><iframe src="//player.vimeo.com/video/<?php the_sub_field('vimeo_id'); ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
       </div>
 
       <?php
