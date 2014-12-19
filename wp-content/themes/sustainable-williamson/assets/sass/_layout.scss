@@ -197,6 +197,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	.video-holder { height: 230px; margin-bottom: 30px;
 		span { font-family: $gothic; color: white; text-transform: uppercase; text-align: center; display: block; font-size: 26px;  position: relative; top: 50%; transform: translateY(-50%); }
 	}
+	.video-holder:hover { opacity: 0.7; }
 }
 
 #case-studies { padding: 50px;
@@ -207,7 +208,8 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		}
 		.case-study-title { display: block; background-color: white; float: left; width: 100%;
 			.case-study-title-text { display: block; padding: 15px; float: left;
-				span {  text-transform: uppercase; font-family: $gothic; }
+				span {  text-transform: uppercase; font-family: $gothic; color: black; }
+				span:hover { opacity: 0.7; }
 			}
 		}
 	}
@@ -219,6 +221,10 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	z-index: -10;
 	top: 60px;
 	width: 100%;
+}
+
+.lightbox {
+	display: none;
 }
 
 /* PAGE Styles

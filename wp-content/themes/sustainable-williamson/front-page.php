@@ -124,9 +124,19 @@
       ?>
 
       <div class="four columns">
-        <div class="video-holder" style="background: url(<?php the_sub_field('video_thumbnail'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
-          <span><?php the_sub_field('video_title'); ?></span>
-        </div>
+        <?php
+
+        $t = get_sub_field('video_title');
+        $t = strtolower($t);
+        $t = str_replace(" ", "-", $t);
+
+        ?>
+        <a href="#" data-featherlight="#<?php echo $t; ?>">
+          <div class="video-holder" style="background: url(<?php the_sub_field('video_thumbnail'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
+            <span><?php the_sub_field('video_title'); ?><br/><br/><img src="<?php echo get_template_directory_uri() ?>/assets/img/play-btn-sml.png" /></span>
+          </div>
+        </a>
+        <div id="<?php echo $t; ?>" class="lightbox"> Input the video here </div>
       </div>
 
       <?php
@@ -159,16 +169,59 @@
       ?>
 
       <div class="three columns">
-        <div class="case-study">
-          <div class="case-study-image">
-            <img src="<?php the_sub_field('case_study_image'); ?>" />
-          </div>
-          <div class="case-study-title">
-            <div class="case-study-title-text">
-              <span><?php the_sub_field('case_study_title'); ?></span>
+        <a href="<?php the_sub_field('case_study_link'); ?>" target="_blank">
+          <div class="case-study">
+            <div class="case-study-image">
+              <img src="<?php the_sub_field('case_study_image'); ?>" />
+            </div>
+            <div class="case-study-title">
+              <div class="case-study-title-text">
+                <span><?php the_sub_field('case_study_title'); ?></span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
+
+      <?php
+
+    endwhile;
+
+    else :
+
+      // no rows found
+
+    endif;
+
+    ?>
+
+    <div class="clear"></div>
+
+    <h3>Living Lab Affiliates</h3>
+
+    <?php
+
+    // check if the repeater field has rows of data
+    if( have_rows('affiliates') ):
+
+      // loop through the rows of data
+      while ( have_rows('affiliates') ) : the_row();
+
+      ?>
+
+      <div class="three columns">
+        <a href="<?php the_sub_field('affiliate_link'); ?>" target="_blank">
+          <div class="case-study">
+            <div class="case-study-image">
+              <img src="<?php the_sub_field('affiliate_image'); ?>" />
+            </div>
+            <div class="case-study-title">
+              <div class="case-study-title-text">
+                <span><?php the_sub_field('affiliate_title'); ?></span>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
 
       <?php
