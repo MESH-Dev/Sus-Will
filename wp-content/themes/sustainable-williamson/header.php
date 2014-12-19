@@ -94,7 +94,7 @@
     <div class="row">
       <div class="two columns">
         <div id="logo">
-          <a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/SW_logo.png" /></a>
+          <a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/SW_Logo.png" /></a>
         </div>
       </div>
 
