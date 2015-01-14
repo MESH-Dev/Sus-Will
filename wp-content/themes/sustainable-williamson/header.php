@@ -9,7 +9,7 @@
 <header>
   <div class="row">
     <div class="nav-bar">
-      <a href="https://www.google.com">
+      <a href="http://williamsonhealthwellness.com">
         <div class="top-third light-green-bg top-1">
           <div class="top-third-text">
             <div class="main-text">
@@ -21,7 +21,7 @@
           </div>
         </div>
       </a>
-      <a href="https://www.google.com">
+      <a href="http://sustainablewilliamson.org">
         <div class="top-third blue-bg top-2">
           <div class="top-third-text">
             <div class="main-text">
@@ -33,7 +33,7 @@
           </div>
         </div>
       </a>
-      <a href="https://www.google.com">
+      <a href="http://mingocountydiabetescoalition.org">
         <div class="top-third bright-green-bg top-3">
           <div class="top-third-text">
             <div class="main-text">
