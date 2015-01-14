@@ -33,7 +33,7 @@
           </div>
         </div>
       </a>
-      <a href="http://mingocountydiabetescoalition.org">
+      <a href="http://mingodiabetes.com">
         <div class="top-third bright-green-bg top-3">
           <div class="top-third-text">
             <div class="main-text">

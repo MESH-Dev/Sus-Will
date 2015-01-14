@@ -23,7 +23,7 @@
         <div class="footer-body">
           <p class="footer-link"><a href="http://williamsonhealthwellness.com">williamsonhealthwellness.com »</a></p>
           <p class="footer-link"><a href="http://healthyselfies.org">healthyselfies.org »</a></p>
-          <p class="footer-link"><a href="http://mingocountydiabetescoalition.org">mingocountydiabetescoalition.org »</a></p>
+          <p class="footer-link"><a href="http://mingodiabetes.com">mingocountydiabetescoalition.org »</a></p>
         </div>
       </div>
     </div>
