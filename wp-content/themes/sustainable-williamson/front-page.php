@@ -168,24 +168,66 @@
     <?php
 
     // check if the repeater field has rows of data
-    if( have_rows('case_studies') ):
+    if( have_rows('augmented_reports') ):
 
-      echo '<h3>Download our Past Reports</h3>';
+      echo '<h3>Experience our Augmented Report</h3>';
 
       // loop through the rows of data
-      while ( have_rows('case_studies') ) : the_row();
+      while ( have_rows('augmented_reports') ) : the_row();
 
       ?>
 
       <div class="three columns">
-        <a href="<?php the_sub_field('case_study_link'); ?>" target="_blank">
+        <a href="<?php the_sub_field('augmented_report_link'); ?>" target="_blank">
           <div class="case-study">
             <div class="case-study-image">
-              <img src="<?php the_sub_field('case_study_image'); ?>" />
+              <img src="<?php the_sub_field('augmented_report_image'); ?>" />
             </div>
             <div class="case-study-title">
               <div class="case-study-title-text">
-                <span><?php the_sub_field('case_study_title'); ?></span>
+                <span><?php the_sub_field('augmented_report_title'); ?></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <?php
+
+    endwhile;
+
+    else :
+
+      // no rows found
+
+    endif;
+
+    ?>
+
+
+    <div class="clear"></div>
+
+    <?php
+
+    // check if the repeater field has rows of data
+    if( have_rows('past_reports') ):
+
+      echo '<h3>Download our Past Reports</h3>';
+
+      // loop through the rows of data
+      while ( have_rows('past_reports') ) : the_row();
+
+      ?>
+
+      <div class="three columns">
+        <a href="<?php the_sub_field('past_report_link'); ?>" target="_blank">
+          <div class="case-study">
+            <div class="case-study-image">
+              <img src="<?php the_sub_field('past_report_image'); ?>" />
+            </div>
+            <div class="case-study-title">
+              <div class="case-study-title-text">
+                <span><?php the_sub_field('past_report_title'); ?></span>
               </div>
             </div>
           </div>
