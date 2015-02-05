@@ -142,6 +142,8 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 /* Homepage Styles
 ================================================== */
 
+
+
 .wrapper { top: 425px; position: absolute; width: 100%;
 	@include breakpoint(smallscreen) { top: 180px; }
 	@include breakpoint(landscape) { top: 180px; }
@@ -158,8 +160,8 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	.content-holder { height: 90px; }
 }
 
-#overview {
-	.overview-callout { border: 2px solid black; padding: 35px; text-align: center; height: 170px; margin: 50px 0px; color: black;
+#overview { margin-top: 50px;
+	.overview-callout { border: 2px solid black; padding: 35px; text-align: center; height: 170px; margin: 0px 0px 50px; color: black;
 
 		@include breakpoint(smallscreen) { margin: 20px 0px; }
 		@include breakpoint(landscape) { margin: 20px 0px; }
@@ -264,6 +266,7 @@ footer { background: black; width: 100%;
 		.footer-body {  padding-bottom: 5px;
 			p { margin-bottom: 10px;
 				a { font-family: $gothic; text-transform: uppercase; color: white; font-size: 22px; text-decoration: none; }
+				a:hover { opacity: 0.7; }
 			}
 		}
 	}
