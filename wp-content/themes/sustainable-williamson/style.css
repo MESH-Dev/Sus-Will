@@ -1870,7 +1870,7 @@ header .content-right img {
 
 /* line 163, assets/sass/_layout.scss */
 #overview {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 /* line 164, assets/sass/_layout.scss */
 #overview .overview-callout {
