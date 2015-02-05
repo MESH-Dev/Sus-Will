@@ -1353,11 +1353,17 @@ header .nav-bar {
   position: relative;
   transition: 0.2s all;
 }
-/* line 12, assets/sass/_layout.scss */
+/* line 11, assets/sass/_layout.scss */
 header .top-third {
   width: 33.33333%;
   float: left;
   min-height: 40px;
+}
+@media only screen and (max-width: 479px) {
+  /* line 11, assets/sass/_layout.scss */
+  header .top-third {
+    width: 100%;
+  }
 }
 /* line 13, assets/sass/_layout.scss */
 header .top-third .top-third-text {
