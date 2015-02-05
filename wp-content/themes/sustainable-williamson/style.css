@@ -1870,7 +1870,7 @@ header .content-right img {
 
 /* line 163, assets/sass/_layout.scss */
 #overview {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 /* line 164, assets/sass/_layout.scss */
 #overview .overview-callout {
@@ -1878,7 +1878,7 @@ header .content-right img {
   padding: 35px;
   text-align: center;
   height: 170px;
-  margin: 0px 0px 50px;
+  margin: 0px 0px 30px;
   color: black;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
