@@ -28,7 +28,7 @@
 
             <div class="four columns <?php if ($i == 0 || $i == 2) { echo 'offset-by-two'; } ?>">
               <a href="<?php the_sub_field('textbox_link'); ?>">
-                <div class="overview-callout">
+                <div class="overview-callout <?php if( get_sub_field('textbox_link')) { echo 'overview-callout-hover'; } ?>">
                   <div class="overview-callout-headline">
                     <span><?php the_sub_field('textbox_headline'); ?></span>
                   </div>

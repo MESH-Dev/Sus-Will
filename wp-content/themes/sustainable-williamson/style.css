@@ -1918,7 +1918,7 @@ header .content-right img {
   font-family: nexa_light;
 }
 /* line 173, assets/sass/_layout.scss */
-#overview .overview-callout:hover {
+#overview .overview-callout-hover:hover {
   background: black;
   color: white;
 }

@@ -170,7 +170,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		.overview-callout-headline { font-family: $gothic; text-transform: uppercase; font-size: 22px; margin-bottom: 10px; line-height: 22px; }
 		.overview-callout-body { font-family: $nexa-light; }
 	}
-	.overview-callout:hover { background: black; color: white; }
+	.overview-callout-hover:hover { background: black; color: white; }
 }
 
 #contact { background: white;
