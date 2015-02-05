@@ -89,6 +89,18 @@
   </div>
 </section> -->
 
+<section id="testimonial">
+  <div class="container">
+    <?php if (get_field('testimonial')) { ?>
+    <div class="testimonial-callout">
+      <blockquote><?php the_field('testimonial'); ?></blockquote>
+      <br/>
+      <span>&mdash; <?php the_field('testimonial_author'); ?></span>
+    </div>
+    <?php } ?>
+  </div>
+</section>
+
 <section id="video" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   <div class="container">
     <div class="video-container">
@@ -105,17 +117,6 @@
   <iframe width="770" height="463" src="//www.youtube.com/embed/HwZ_MNT6C1k" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<section id="testimonial">
-  <div class="container">
-    <?php if (get_field('testimonial')) { ?>
-    <div class="testimonial-callout">
-      <blockquote><?php the_field('testimonial'); ?></blockquote>
-      <br/>
-      <span>&mdash; <?php the_field('testimonial_author'); ?></span>
-    </div>
-    <?php } ?>
-  </div>
-</section>
 
 <section id="video-thumbnails">
   <div class="container">
