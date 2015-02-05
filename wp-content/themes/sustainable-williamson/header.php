@@ -62,7 +62,6 @@
   <div class="row white-bg">
     <div class="container white-ribbon">
       <div class="content-right">
-        <span>Breathing life back into Appalachia</span>
 
         <!-- Add the logo image here -->
         <img src="<?php echo get_template_directory_uri() ?>/assets/img/Williamson_seal_logo.png" />
