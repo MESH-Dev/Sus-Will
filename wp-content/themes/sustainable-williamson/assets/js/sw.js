@@ -30,4 +30,51 @@ jQuery(document).ready(function($){
     $('#responsiveNav').toggle('slide', {direction:'right'}, 300);
   });
 
+  // Toggle header tabs
+
+  $('.top-1').hover(function() {
+    $('.clinic-1').toggle();
+    $('.clinic-2').toggle();
+  });
+
+  $('.top-2').hover(function() {
+    $('.platform-1').toggle();
+    $('.platform-2').toggle();
+  });
+
+  $('.top-3').hover(function() {
+    $('.outreach-1').toggle();
+    $('.outreach-2').toggle();
+  });
+
+  // New tabs
+
+  /* ==========
+     Variables
+   ========== */
+   var url = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+
+  /* ==========
+      Utilities
+    ========== */
+   function beginsWith(needle, haystack){
+     return (haystack.substr(0, needle.length) == needle);
+   };
+
+
+  /* ==========
+     Anchors open in new tab/window
+   ========== */
+   $('a').each(function(){
+
+     if(typeof $(this).attr('href') != "undefined") {
+      var test = beginsWith( url, $(this).attr('href') );
+      //if it's an external link then open in a new tab
+      if( test == false && $(this).attr('href') != '#' ){
+        $(this).attr('target','_blank');
+      }
+     }
+   });
+
+
 });

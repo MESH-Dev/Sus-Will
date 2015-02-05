@@ -10,37 +10,49 @@
   <div class="row">
     <div class="nav-bar">
       <a href="http://williamsonhealthwellness.com">
-        <div class="top-third light-green-bg top-1">
+        <div class="top-third light-green-bg top-1 clinic-1">
+          <div class="top-third-text">
+            <div class="sub-text">
+              <span>Our Clinic</span>
+            </div>
+          </div>
+        </div>
+        <div class="top-third yellow-bg top-1 clinic-2">
           <div class="top-third-text">
             <div class="main-text">
-              <span>Williamson Health and Wellness Center</span>
-            </div>
-            <div class="sub-text">
-              <span>Our Community Clinic</span>
+              <span>williamsonhealthwellness.com »</span>
             </div>
           </div>
         </div>
       </a>
       <a href="http://sustainablewilliamson.org">
-        <div class="top-third blue-bg top-2">
+        <div class="top-third blue-bg top-2 platform-1">
+          <div class="top-third-text">
+            <div class="sub-text">
+              <span>Our Platform</span>
+            </div>
+          </div>
+        </div>
+        <div class="top-third teal-bg top-2 platform-2">
           <div class="top-third-text">
             <div class="main-text">
-              <span>Sustainable Williamson</span>
-            </div>
-            <div class="sub-text">
-              <span>Our Campaign Platform</span>
+              <span>sustainablewilliamson.org »</span>
             </div>
           </div>
         </div>
       </a>
       <a href="http://mingodiabetes.com">
-        <div class="top-third bright-green-bg top-3">
+        <div class="top-third bright-green-bg top-3 outreach-1">
+          <div class="top-third-text">
+            <div class="sub-text">
+              <span>Our Outreach</span>
+            </div>
+          </div>
+        </div>
+        <div class="top-third purple-bg top-3 outreach-2">
           <div class="top-third-text">
             <div class="main-text">
-              <span>Mingo County Diabetes Coalition</span>
-            </div>
-            <div class="sub-text">
-              <span>Our Outreach Resource</span>
+              <span>mingodiabetes.com »</span>
             </div>
           </div>
         </div>
@@ -49,9 +61,6 @@
   </div>
   <div class="row white-bg">
     <div class="container white-ribbon">
-      <div class="angle-left">
-        <i class="fa fa-angle-down"></i>
-      </div>
       <div class="content-right">
         <span>Breathing life back into Appalachia</span>
 

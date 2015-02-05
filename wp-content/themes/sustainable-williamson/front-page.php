@@ -26,7 +26,7 @@
             // display a sub field value
             ?>
 
-            <div class="four columns <?php if ($i == 0) { echo 'offset-by-two'; } ?>">
+            <div class="four columns <?php if ($i == 0 || $i == 2) { echo 'offset-by-two'; } ?>">
               <a href="<?php the_sub_field('textbox_link'); ?>">
                 <div class="overview-callout">
                   <div class="overview-callout-headline">
@@ -56,7 +56,7 @@
   </div>
 </section>
 
-<section id="contact">
+<!-- <section id="contact">
   <div class="container">
     <div class="contact-callout">
       <h3>Participants</h3>
@@ -87,7 +87,7 @@
       ?>
     </div>
   </div>
-</section>
+</section> -->
 
 <section id="video" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   <div class="container">
@@ -119,7 +119,7 @@
 
 <section id="video-thumbnails">
   <div class="container">
-    <h3>Watch the six components of sustainable communities</h3>
+    <h3>Watch the six components of regenerative communities</h3>
 
     <?php
 
@@ -164,12 +164,13 @@
 
 <section id="case-studies" style="background: url(<?php the_field('background_image_3'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   <div class="container">
-    <h3>Download our case studies</h3>
 
     <?php
 
     // check if the repeater field has rows of data
     if( have_rows('case_studies') ):
+
+      echo '<h3>Download our Past Reports</h3>';
 
       // loop through the rows of data
       while ( have_rows('case_studies') ) : the_row();
@@ -205,12 +206,12 @@
 
     <div class="clear"></div>
 
-    <h3>Living Lab Affiliates</h3>
-
     <?php
 
     // check if the repeater field has rows of data
     if( have_rows('affiliates') ):
+
+      echo '<h3>Living Lab Affiliates</h3>';
 
       // loop through the rows of data
       while ( have_rows('affiliates') ) : the_row();
